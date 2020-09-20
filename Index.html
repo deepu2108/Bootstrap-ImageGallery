@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap Image Gallery</title>
+</head>
+<body class="bg-dark">
+    <!-- 
+    https://getbootstrap.com/docs/4.5/getting-started/introduction/
+    //for free images
+        Unsplash.com
+    for free icons:
+        https://fontawesome.com/start/confirm
+
+    for aos animations:
+            https://michalsnik.github.io/aos/
+
+    <script src="https://kit.fontawesome.com/5beabe94ea.js" crossorigin="anonymous"></script>
+    -Try dancing script to Text design
+
+    -->
+    <!-- <button class= "btn btn-warning">Hello BootStrap</button> -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand text-light" href="#"><i class="fas fa-camera-retro text-warning"></i> Image Gallery</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Images Glarie</h1>
+        <p class="lead text-warning">Things end but memories last forever,and that is why we want to save all your memories</p>
+    </div>
+    </div>
+
+    <div class="gallery">
+        <div class="images d-flex justify-content-around m-4 row" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duation="900">
+            <img class="col-md-4 mt-4" src="https://images.unsplash.com/photo-1555445091-5a8b655e8a4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="">
+            <img class="col-md-4 mt-4" src="https://images.unsplash.com/photo-1592160884144-921e26cb84e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="">
+            <img class="col-md-4 mt-4" src="https://images.unsplash.com/photo-1548101019-ec4610f40906?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="">
+        </div>
+        <div class="images d-flex justify-content-around m-4 row" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duation="900">
+            <img class="col-md-4 mt-4" src="https://images.unsplash.com/photo-1581549432843-312d20ea42e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=658&q=80" alt="">
+            <img class="col-md-4 mt-4" src="https://images.unsplash.com/photo-1545155277-5d5075713c86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+            <img class="col-md-4 mt-4" src="https://images.unsplash.com/photo-1549492423-400259a2e574?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid m-0" id="contact">
+        <div class="container text-center">
+            <h1 class="display-4">Contact Us</h1>
+            <div class="icons">
+            <a href="www.facebook.com" class="fab fa-facebook"></a>
+            <a href="www.instagram.com" class="fab fa-instagram-square"></a>
+            <a href="www.linkedin.com" class="fab fa-linkedin"></a>
+            </div>
+            <a href="#" class="btn btn-lg bg-warning">Back to Top <i class="fas fa-arrow-alt-circle-up"></i></a>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+    <script src="https://kit.fontawesome.com/5beabe94ea.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+                
+</body>
+</html>
